@@ -94,19 +94,3 @@ async def _(event):
         await meemk.delete()
     except Exception:
         await memek.edit("**GA ADA YANG MAU SAMA LO, MAKANYA GANTENK.**")
-
-
-CMD_HELP.update(
-    {
-        "asupan": f"**Plugin : **`asupan`\
-        \n\n  •  **Syntax :** `{cmd}asupan`\
-        \n  •  **Function : **Mengirim video asupan secara random.\
-        \n\n  •  **Syntax :** `{cmd}desahcewe`\
-        \n  •  **Function : **Mengirim voice desah cewe secara random.\
-	\n\n  •  **Syntax :** `{cmd}desahcowo`\
-        \n  •  **Function :**Mengirim voice desah cowo secara random.\
-        \n\n  •  **Syntax :** `{cmd}ayang`\
-        \n  •  **Function : **Mencari ayang buat cowok yang jomblo.\
-    "
-    }
-)

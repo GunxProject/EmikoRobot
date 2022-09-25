@@ -3,9 +3,9 @@
 
 import random
 
-from indomie import CMD_HANDLER as cmd
-from indomie import CMD_HELP
-from indomie.utils import register
+from emikorobot import CMD_HANDLER as cmd
+from emikorobot import CMD_HELP
+from emikorobot.utils import register
 
 from telethon.tl.types import InputMessagesFilterVideo
 from telethon.tl.types import InputMessagesFilterVoice

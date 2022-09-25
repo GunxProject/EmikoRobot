@@ -92,3 +92,13 @@ async def _(event):
         await meemk.delete()
     except Exception:
         await memek.edit("**GA ADA YANG MAU SAMA LO, MAKANYA GANTENK.**")
+
+ASUPAN_HANDLER = DisableAbleCommandHandler("asupan", asupan, run_async=True)
+DESAHCEWE_HANDLER = DisableAbleCommandHandler("desahcewe", desahcewe, run_async=True)
+DESAHCOWO_HANDLER = DisableAbleCommandHandler("desahcowo", desahcowo, run_async=True)
+AYANG_HANDLER = DisableAbleCommandHandler("ayang", ayang, run_async=True)
+
+dispatcher.add_handler(ASUPAN_HANDLER)
+dispatcher.add_handler(DESAHCEWE_HANDLER)
+dispatcher.add_handler(DESAHCOWO_HANDLER)
+dispatcher.add_handler(AYANG_HANDLER)

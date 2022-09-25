@@ -3,8 +3,6 @@
 
 import random
 
-from EmikoRobot import CMD_HANDLER as cmd
-from EmikoRobot import CMD_HELP
 from EmikoRobot.utils import register
 
 from telethon.tl.types import InputMessagesFilterVideo

@@ -1,4 +1,4 @@
-# 🍀 © @tofik_dn
+i7# 🍀 © @tofik_dn
 # ⚠️ Do not remove credits
 
 import random
@@ -10,7 +10,7 @@ from telethon.tl.types import InputMessagesFilterVoice
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
-@EmikoRobot_cmd(pattern="asupan$")
+@register(pattern="asupan$")
 async def _(event):
     memek = await edit_or_reply(event, "**🔍 Mencari Video Asupan...**")
     try:
@@ -31,7 +31,7 @@ async def _(event):
         await memek.edit("**Tidak dapat menemukan video asupan.**")
 
 
-@EmikoRobot_cmd(pattern="desahcewe$")
+@register(pattern="desahcewe$")
 async def _(event):
     memek = await edit_or_reply(event, "**🔍 Mencari VN Desahan Cewe...**")
     try:
@@ -52,7 +52,7 @@ async def _(event):
         await memek.edit("**Tidak dapat menemukan vn desahan cowo.**")
 
 
-@EmikoRobot_cmd(pattern="desahcowo$")
+@register(pattern="desahcowo$")
 async def _(event):
     memek = await edit_or_reply(event, "**🔍 Mencari VN Desahan Cowo...**")
     try:
@@ -73,7 +73,7 @@ async def _(event):
         await memek.edit("**Tidak dapat menemukan desahan cowo.**")
 
 
-@EmikoRobot_cmd(pattern="ayang$")
+@register(pattern="ayang$")
 async def _(event):
     memek = await edit_or_reply(event, "**🔍 Mencari Ayang...**")
     try:

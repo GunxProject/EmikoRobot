@@ -5,14 +5,14 @@ import random
 
 from indomie import CMD_HANDLER as cmd
 from indomie import CMD_HELP
-from indomie.utils import indomie_cmd
+from indomie.utils import emikorobot_cmd
 
 from telethon.tl.types import InputMessagesFilterVideo
 from telethon.tl.types import InputMessagesFilterVoice
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
-@indomie_cmd(pattern="asupan$")
+@emikorobot_cmd(pattern="asupan$")
 async def _(event):
     memek = await edit_or_reply(event, "**🔍 Mencari Video Asupan...**")
     try:
@@ -33,7 +33,7 @@ async def _(event):
         await memek.edit("**Tidak dapat menemukan video asupan.**")
 
 
-@indomie_cmd(pattern="desahcewe$")
+@emikorobot_cmd(pattern="desahcewe$")
 async def _(event):
     memek = await edit_or_reply(event, "**🔍 Mencari VN Desahan Cewe...**")
     try:
@@ -54,7 +54,7 @@ async def _(event):
         await memek.edit("**Tidak dapat menemukan vn desahan cowo.**")
 
 
-@indomie_cmd(pattern="desahcowo$")
+@emikorobot_cmd(pattern="desahcowo$")
 async def _(event):
     memek = await edit_or_reply(event, "**🔍 Mencari VN Desahan Cowo...**")
     try:
@@ -75,7 +75,7 @@ async def _(event):
         await memek.edit("**Tidak dapat menemukan desahan cowo.**")
 
 
-@indomie_cmd(pattern="ayang$")
+@emikorobot_cmd(pattern="ayang$")
 async def _(event):
     memek = await edit_or_reply(event, "**🔍 Mencari Ayang...**")
     try:

@@ -3,7 +3,7 @@
 
 import random
 
-from EmikoRobot.utils import register
+from EmikoRobot.event import register
 
 from telethon.tl.types import InputMessagesFilterVideo
 from telethon.tl.types import InputMessagesFilterVoice

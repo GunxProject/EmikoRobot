@@ -1,4 +1,4 @@
-i7# 🍀 © @tofik_dn
+# 🍀 © @tofik_dn
 # ⚠️ Do not remove credits
 
 import random

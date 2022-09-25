@@ -3,16 +3,16 @@
 
 import random
 
-from emikorobot import CMD_HANDLER as cmd
-from emikorobot import CMD_HELP
-from emikorobot.utils import register
+from EmikoRobot import CMD_HANDLER as cmd
+from EmikoRobot import CMD_HELP
+from EmikoRobot.utils import register
 
 from telethon.tl.types import InputMessagesFilterVideo
 from telethon.tl.types import InputMessagesFilterVoice
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
-@emikorobot_cmd(pattern="asupan$")
+@EmikoRobot_cmd(pattern="asupan$")
 async def _(event):
     memek = await edit_or_reply(event, "**🔍 Mencari Video Asupan...**")
     try:
@@ -33,7 +33,7 @@ async def _(event):
         await memek.edit("**Tidak dapat menemukan video asupan.**")
 
 
-@emikorobot_cmd(pattern="desahcewe$")
+@EmikoRobot_cmd(pattern="desahcewe$")
 async def _(event):
     memek = await edit_or_reply(event, "**🔍 Mencari VN Desahan Cewe...**")
     try:
@@ -54,7 +54,7 @@ async def _(event):
         await memek.edit("**Tidak dapat menemukan vn desahan cowo.**")
 
 
-@emikorobot_cmd(pattern="desahcowo$")
+@EmikoRobot_cmd(pattern="desahcowo$")
 async def _(event):
     memek = await edit_or_reply(event, "**🔍 Mencari VN Desahan Cowo...**")
     try:
@@ -75,7 +75,7 @@ async def _(event):
         await memek.edit("**Tidak dapat menemukan desahan cowo.**")
 
 
-@emikorobot_cmd(pattern="ayang$")
+@EmikoRobot_cmd(pattern="ayang$")
 async def _(event):
     memek = await edit_or_reply(event, "**🔍 Mencari Ayang...**")
     try:

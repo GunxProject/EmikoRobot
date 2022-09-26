@@ -12,7 +12,7 @@ from telethon.tl.types import InputMessagesFilterPhotos
 
 @register(pattern="asupan$")
 async def _(event):
-    memek = await edit_or_reply(event, "**🔍 Mencari Video Asupan...**")
+    memek = await event.reply(event, "**🔍 Mencari Video Asupan...**")
     try:
         asupannya = [
             asupan
@@ -33,7 +33,7 @@ async def _(event):
 
 @register(pattern="desahcewe$")
 async def _(event):
-    memek = await edit_or_reply(event, "**🔍 Mencari VN Desahan Cewe...**")
+    memek = await event.reply(event, "**🔍 Mencari VN Desahan Cewe...**")
     try:
         desahannya = [
             desah
@@ -54,7 +54,7 @@ async def _(event):
 
 @register(pattern="desahcowo$")
 async def _(event):
-    memek = await edit_or_reply(event, "**🔍 Mencari VN Desahan Cowo...**")
+    memek = await event.reply(event, "**🔍 Mencari VN Desahan Cowo...**")
     try:
         desahcowo = [
             desahnya
@@ -75,7 +75,7 @@ async def _(event):
 
 @register(pattern="ayang$")
 async def _(event):
-    memek = await edit_or_reply(event, "**🔍 Mencari Ayang...**")
+    memek = await event.reply(event, "**🔍 Mencari Ayang...**")
     try:
         ayangnya = [
             ayang
@@ -89,7 +89,7 @@ async def _(event):
             file=random.choice(ayangnya), reply_to=event.reply_to_msg_id,
             caption=f"**Ayang by** [{aku.first_name}](tg://user?id={aku.id})")
 
-        await meemk.delete()
+        await memek.delete()
     except Exception:
         await memek.edit("**GA ADA YANG MAU SAMA LO, MAKANYA GANTENK.**")
 

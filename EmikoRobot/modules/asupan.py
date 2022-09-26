@@ -103,3 +103,12 @@ dispatcher.add_handler(ASUPAN_HANDLER)
 dispatcher.add_handler(DESAHCEWE_HANDLER)
 dispatcher.add_handler(DESAHCOWO_HANDLER)
 dispatcher.add_handler(AYANG_HANDLER)
+
+__mod_name__ = "Asupa "
+__command_list__ = [
+    "asupan", "desahcewe", "desahcowo", "ayang"
+]
+
+__handlers__ = [
+    ASUPAN_HANDLER, DESAHCEWE_HANDLER, DESAHCOWO_HANDLER, AYANG_HANDLER
+]

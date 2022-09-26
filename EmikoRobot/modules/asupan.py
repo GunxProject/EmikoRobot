@@ -22,7 +22,7 @@ async def _(event):
             )
         ]
 
-        file = random.choice(asupannya)
+        kontols = random.choice(asupannya)
         pantek = await ubot2.download_media(kontols)
 
         await tbot.send_file(
@@ -47,7 +47,7 @@ async def _(event):
             )
         ]
 
-        file = random.choice(asupannya)
+        kontols = random.choice(asupannya)
         pantek = await ubot2.download_media(kontols)
         
         await tbot.send_file(
@@ -72,7 +72,7 @@ async def _(event):
             )
 	]
         
-        file = random.choice(asupannya)
+        kontols = random.choice(asupannya)
         pantek = await ubot2.download_media(kontols)
 
         await tbot.send_file(
@@ -97,7 +97,7 @@ async def _(event):
             )
         ]
 
-        file = random.choice(asupannya)
+        kontols = random.choice(asupannya)
         pantek = await ubot2.download_media(kontols)
 
         await tbot.send_file(

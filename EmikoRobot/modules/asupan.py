@@ -4,6 +4,7 @@
 import random
 
 from EmikoRobot.events import register
+from EmikoRobot.modules.disable import DisableAbleCommandHandler
 
 from telethon.tl.types import InputMessagesFilterVideo
 from telethon.tl.types import InputMessagesFilterVoice

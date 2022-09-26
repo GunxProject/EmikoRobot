@@ -11,7 +11,7 @@ from telethon.tl.types import InputMessagesFilterPhotos
 
 
 @register(pattern="^/asupan(.*)")
-async def _(event):
+async def asupan(event):
     memek = await event.reply(event, "**🔍 Mencari Video Asupan...**")
     try:
         asupannya = [
@@ -32,7 +32,7 @@ async def _(event):
 
 
 @register(pattern="^/desahcewe(.*)")
-async def _(event):
+async def desahcewe(event):
     memek = await event.reply(event, "**🔍 Mencari VN Desahan Cewe...**")
     try:
         desahannya = [
@@ -53,7 +53,7 @@ async def _(event):
 
 
 @register(pattern="^/desahcowo(.*)")
-async def _(event):
+async def desahcowo(event):
     memek = await event.reply(event, "**🔍 Mencari VN Desahan Cowo...**")
     try:
         desahcowo = [
@@ -74,7 +74,7 @@ async def _(event):
 
 
 @register(pattern="^/ayang(.*)")
-async def _(event):
+async def ayang(event):
     memek = await event.reply(event, "**🔍 Mencari Ayang...**")
     try:
         ayangnya = [

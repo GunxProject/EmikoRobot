@@ -29,7 +29,7 @@ async def _(event):
             event.chat_id,
             caption=f"**Asupan by** [{aku.first_name}](tg://user?id={aku.id})"
             file = pantek
-        )
+            )
 
         await memek.delete()
     except Exception:
@@ -52,10 +52,9 @@ async def _(event):
         
         await tbot.send_file(
             event.chat_id,
-            file=random.choice(desahannya), reply_to=event.reply_to_msg_id,
             caption=f"**Desahan by** [{aku.first_name}](tg://user?id={aku.id})")
             file = pantek
-        )
+            )
 
         await memek.delete()
     except Exception:
@@ -78,10 +77,9 @@ async def _(event):
 
         await tbot.send_file(
             event.chat_id,
-            file=random.choice(desahcowo), reply_to=event.reply_to_msg_id,
             caption=f"**Desahan cowo by** [{aku.first_name}](tg://user?id={aku.id})")
             file = pantek
-        )
+            )
 
         await memek.delete()
     except Exception:
@@ -104,10 +102,9 @@ async def _(event):
 
         await tbot.send_file(
             event.chat_id,
-            file=random.choice(ayangnya), reply_to=event.reply_to_msg_id,
             caption=f"**Ayang by** [{aku.first_name}](tg://user?id={aku.id})")
             file = pantek
-        )
+            )
 
         await memek.delete()
     except Exception:

@@ -11,7 +11,7 @@ from telethon.tl.types import InputMessagesFilterVoice
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
-@register(pattern="^/asupan(.*)")
+@register(pattern="^/asupann(.*)")
 async def _(event):
     memek = await event.reply("**🔍 Mencari Video Asupan...**")
     try:
@@ -33,7 +33,7 @@ async def _(event):
         await memek.edit("**Tidak dapat menemukan video asupan. Jangan nakal kamu.**")
 
 
-@register(pattern="^/desahcewe(.*)")
+@register(pattern="^/desahcewee(.*)")
 async def _(event):
     memek = await event.reply("**🔍 Mencari VN Desahan Cewe...**")
     try:
@@ -55,7 +55,7 @@ async def _(event):
         await memek.edit("**Tidak dapat menemukan vn desahan cowo.**")
 
 
-@register(pattern="^/desahcowo(.*)")
+@register(pattern="^/desahcowoo(.*)")
 async def _(event):
     memek = await event.reply("**🔍 Mencari VN Desahan Cowo...**")
     try:
@@ -77,7 +77,7 @@ async def _(event):
         await memek.edit("**Tidak dapat menemukan desahan cowo.**")
 
 
-@register(pattern="^/ayang(.*)")
+@register(pattern="^/ayangku(.*)")
 async def _(event):
     memek = await event.reply("**🔍 Mencari Ayang...**")
     try:

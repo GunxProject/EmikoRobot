@@ -84,16 +84,16 @@ async def _(event):
         ayangnya = [
             ayang
             async for ayang in ubot2.iter_messages(
-            "@IndomieGantengV2", filter=InputMessagesFilterPhotos
+            "https://t.me/+_W-DEBH2Ty8wYzdl", filter=InputMessagesFilterPhotos
             )
         ]
         kontols = random.choice(ayangnya)
         pantek = await ubot2.download_media(kontols)
         await tbot.send_file(
             event.chat_id,
-            caption=f"**Nih Ayang Untukmu. Jaga Baik-Baik. Jangan Cari Lagi.",
+            caption=f"**Nih Ayang Untukmu. Jaga Baik-Baik. Jangan Cari Lagi**.",
             file=pantek
             )
         await memek.delete()
     except Exception:
-        await memek.edit("**GA ADA YANG MAU SAMA LO, MAKANYA GANTENK.**")
+        await memek.edit("**GA ADA YANG MAU SAMA LO, MAKANYA GANTENG.**")

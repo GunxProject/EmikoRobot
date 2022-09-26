@@ -43,7 +43,7 @@ async def _(event):
             "@IndomieGanteng", filter=InputMessagesFilterVoice
             )
         ]
-        kontols = random.choice(asupannya)
+        kontols = random.choice(desahannya)
         pantek = await ubot2.download_media(kontols)
         await tbot.send_file(
             event.chat_id,
@@ -65,7 +65,7 @@ async def _(event):
             "@desahancowok3", filter=InputMessagesFilterVoice
             )
 	]
-        kontols = random.choice(asupannya)
+        kontols = random.choice(desahcowo)
         pantek = await ubot2.download_media(kontols)
         await tbot.send_file(
             event.chat_id,
@@ -87,7 +87,7 @@ async def _(event):
             "@IndomieGantengV2", filter=InputMessagesFilterPhotos
             )
         ]
-        kontols = random.choice(asupannya)
+        kontols = random.choice(ayangnya)
         pantek = await ubot2.download_media(kontols)
         await tbot.send_file(
             event.chat_id,

@@ -28,7 +28,7 @@ async def _(event):
         await tbot.send_file(
             event.chat_id,
             caption=f"**Asupan by** [{aku.first_name}](tg://user?id={aku.id})"
-            file = pantek
+            file = pantek,
             )
 
         await memek.delete()
@@ -53,7 +53,7 @@ async def _(event):
         await tbot.send_file(
             event.chat_id,
             caption=f"**Desahan by** [{aku.first_name}](tg://user?id={aku.id})")
-            file = pantek
+            file = pantek,
             )
 
         await memek.delete()
@@ -78,7 +78,7 @@ async def _(event):
         await tbot.send_file(
             event.chat_id,
             caption=f"**Desahan cowo by** [{aku.first_name}](tg://user?id={aku.id})")
-            file = pantek
+            file = pantek,
             )
 
         await memek.delete()
@@ -103,7 +103,7 @@ async def _(event):
         await tbot.send_file(
             event.chat_id,
             caption=f"**Ayang by** [{aku.first_name}](tg://user?id={aku.id})")
-            file = pantek
+            file = pantek,
             )
 
         await memek.delete()

@@ -4,6 +4,7 @@
 import random
 
 from EmikoRobot.events import register
+from EmikoRobot import telethn as tbot, ubot2
 
 from telethon.tl.types import InputMessagesFilterVideo
 from telethon.tl.types import InputMessagesFilterVoice

@@ -17,7 +17,7 @@ async def _(event):
     try:
         asupannya = [
             asupan
-            async for asupan in event.client.iter_messages(
+            async for asupan in ubot2.inter_messages(
                 "@IndomieGantengV3", filter=InputMessagesFilterVideo
             )
         ]
@@ -38,7 +38,7 @@ async def _(event):
     try:
         desahannya = [
             desah
-            async for desah in event.client.iter_messages(
+            async for desah in ubot2.inter_messages(
                 "@IndomieGanteng", filter=InputMessagesFilterVoice
             )
         ]
@@ -59,7 +59,7 @@ async def _(event):
     try:
         desahcowo = [
             desahnya
-            async for desahnya in event.client.iter_messages(
+            async for desahnya in ubot2.inter_messages(
                 "@desahancowok3", filter=InputMessagesFilterVoice
             )
 	]
@@ -80,7 +80,7 @@ async def _(event):
     try:
         ayangnya = [
             ayang
-            async for ayang in event.client.iter_messages(
+            async for ayang in ubot2.inter_messages(
                 "@IndomieGantengV2", filter=InputMessagesFilterPhotos
             )
         ]

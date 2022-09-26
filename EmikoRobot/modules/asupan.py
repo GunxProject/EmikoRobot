@@ -21,15 +21,17 @@ async def _(event):
                 "@IndomieGantengV3", filter=InputMessagesFilterVideo
             )
         ]
-        
+
+        file = random.choice(asupannya)
+        pantek = await ubot2.download_media(kontols)
+
         await tbot.send_file(
             event.chat_id,
-            file=random.choice(asupannya), reply_to=event.reply_to_msg_id,
             caption=f"**Asupan by** [{aku.first_name}](tg://user?id={aku.id})")
 
         await memek.delete()
     except Exception:
-        await memek.edit("**Tidak dapat menemukan video asupan.**")
+        await memek.edit("**Tidak dapat menemukan video asupan. Jangan nakal kamu.**")
 
 
 @register(pattern="^/desahcewe(.*)")
@@ -42,6 +44,9 @@ async def _(event):
                 "@IndomieGanteng", filter=InputMessagesFilterVoice
             )
         ]
+
+        file = random.choice(asupannya)
+        pantek = await ubot2.download_media(kontols)
         
         await tbot.send_file(
             event.chat_id,
@@ -64,6 +69,9 @@ async def _(event):
             )
 	]
         
+        file = random.choice(asupannya)
+        pantek = await ubot2.download_media(kontols)
+
         await tbot.send_file(
             event.chat_id,
             file=random.choice(desahcowo), reply_to=event.reply_to_msg_id,
@@ -84,7 +92,10 @@ async def _(event):
                 "@IndomieGantengV2", filter=InputMessagesFilterPhotos
             )
         ]
-        
+
+        file = random.choice(asupannya)
+        pantek = await ubot2.download_media(kontols)
+
         await tbot.send_file(
             event.chat_id,
             file=random.choice(ayangnya), reply_to=event.reply_to_msg_id,

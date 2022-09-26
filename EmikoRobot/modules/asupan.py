@@ -4,7 +4,6 @@
 import random
 
 from EmikoRobot.events import register
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
 
 from telethon.tl.types import InputMessagesFilterVideo
 from telethon.tl.types import InputMessagesFilterVoice
@@ -94,21 +93,3 @@ async def _(event):
     except Exception:
         await memek.edit("**GA ADA YANG MAU SAMA LO, MAKANYA GANTENK.**")
 
-ASUPAN_HANDLER = DisableAbleCommandHandler("asupan", asupan, run_async=True)
-DESAHCEWE_HANDLER = DisableAbleCommandHandler("desahcewe", desahcewe, run_async=True)
-DESAHCOWO_HANDLER = DisableAbleCommandHandler("desahcowo", desahcowo, run_async=True)
-AYANG_HANDLER = DisableAbleCommandHandler("ayang", ayang, run_async=True)
-
-dispatcher.add_handler(ASUPAN_HANDLER)
-dispatcher.add_handler(DESAHCEWE_HANDLER)
-dispatcher.add_handler(DESAHCOWO_HANDLER)
-dispatcher.add_handler(AYANG_HANDLER)
-
-__mod_name__ = "Asupa "
-__command_list__ = [
-    "asupan", "desahcewe", "desahcowo", "ayang"
-]
-
-__handlers__ = [
-    ASUPAN_HANDLER, DESAHCEWE_HANDLER, DESAHCOWO_HANDLER, AYANG_HANDLER
-]

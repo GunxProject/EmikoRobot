@@ -18,7 +18,7 @@ async def _(event):
         asupannya = [
             asupan
             async for asupan in ubot2.inter_messages(
-                "@IndomieGantengV3", filter=InputMessagesFilterVideo
+            "@IndomieGantengV3", filter=InputMessagesFilterVideo
             )
         ]
         kontols = random.choice(asupannya)
@@ -40,7 +40,7 @@ async def _(event):
         desahannya = [
             desah
             async for desah in ubot2.inter_messages(
-                "@IndomieGanteng", filter=InputMessagesFilterVoice
+            "@IndomieGanteng", filter=InputMessagesFilterVoice
             )
         ]
         kontols = random.choice(asupannya)
@@ -62,7 +62,7 @@ async def _(event):
         desahcowo = [
             desahnya
             async for desahnya in ubot2.inter_messages(
-                "@desahancowok3", filter=InputMessagesFilterVoice
+            "@desahancowok3", filter=InputMessagesFilterVoice
             )
 	]
         kontols = random.choice(asupannya)
@@ -84,7 +84,7 @@ async def _(event):
         ayangnya = [
             ayang
             async for ayang in ubot2.inter_messages(
-                "@IndomieGantengV2", filter=InputMessagesFilterPhotos
+            "@IndomieGantengV2", filter=InputMessagesFilterPhotos
             )
         ]
         kontols = random.choice(asupannya)

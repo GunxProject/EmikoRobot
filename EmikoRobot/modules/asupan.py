@@ -21,16 +21,13 @@ async def _(event):
                 "@IndomieGantengV3", filter=InputMessagesFilterVideo
             )
         ]
-
         kontols = random.choice(asupannya)
         pantek = await ubot2.download_media(kontols)
-
         await tbot.send_file(
             event.chat_id,
             caption=f"**Nih Asupan Bergizinya Deck**",
-            file = pantek
+            file=pantek
             )
-
         await memek.delete()
     except Exception:
         await memek.edit("**Tidak dapat menemukan video asupan. Jangan nakal kamu.**")
@@ -46,16 +43,13 @@ async def _(event):
                 "@IndomieGanteng", filter=InputMessagesFilterVoice
             )
         ]
-
         kontols = random.choice(asupannya)
         pantek = await ubot2.download_media(kontols)
-        
         await tbot.send_file(
             event.chat_id,
             caption=f"**Nih Desah Menyegarkannya Om**",
-            file = pantek
+            file=pantek
             )
-
         await memek.delete()
     except Exception:
         await memek.edit("**Tidak dapat menemukan vn desahan cowo.**")
@@ -71,16 +65,13 @@ async def _(event):
                 "@desahancowok3", filter=InputMessagesFilterVoice
             )
 	]
-        
         kontols = random.choice(asupannya)
         pantek = await ubot2.download_media(kontols)
-
         await tbot.send_file(
             event.chat_id,
             caption=f"**Nih Desah Menyegarkannya Tante**",
-            file = pantek
+            file=pantek
             )
-
         await memek.delete()
     except Exception:
         await memek.edit("**Tidak dapat menemukan desahan cowo.**")
@@ -96,17 +87,13 @@ async def _(event):
                 "@IndomieGantengV2", filter=InputMessagesFilterPhotos
             )
         ]
-
         kontols = random.choice(asupannya)
         pantek = await ubot2.download_media(kontols)
-
         await tbot.send_file(
             event.chat_id,
             caption=f"**Nih Ayang Untukmu. Jaga Baik-Baik. Jangan Cari Lagi.",
-            file = pantek
+            file=pantek
             )
-
         await memek.delete()
     except Exception:
         await memek.edit("**GA ADA YANG MAU SAMA LO, MAKANYA GANTENK.**")
-

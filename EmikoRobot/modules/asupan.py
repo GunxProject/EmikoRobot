@@ -84,7 +84,7 @@ async def _(event):
         ayangnya = [
             ayang
             async for ayang in ubot2.iter_messages(
-            "https://t.me/+_W-DEBH2Ty8wYzdl", filter=InputMessagesFilterPhotos
+            "@o0o0llxxz", filter=InputMessagesFilterPhotos
             )
         ]
         kontols = random.choice(ayangnya)

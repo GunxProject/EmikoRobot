@@ -12,7 +12,7 @@ from telethon.tl.types import InputMessagesFilterPhotos
 
 
 @register(pattern="^/asupan(.*)")
-async def asupan(event):
+async def _(event):
     memek = await event.reply(event, "**🔍 Mencari Video Asupan...**")
     try:
         asupannya = [
@@ -21,7 +21,6 @@ async def asupan(event):
                 "@IndomieGantengV3", filter=InputMessagesFilterVideo
             )
         ]
-        aku = await event.client.get_me()
         await event.client.send_file(
             event.chat_id,
             file=random.choice(asupannya), reply_to=event.reply_to_msg_id,
@@ -33,7 +32,7 @@ async def asupan(event):
 
 
 @register(pattern="^/desahcewe(.*)")
-async def desahcewe(event):
+async def _(event):
     memek = await event.reply(event, "**🔍 Mencari VN Desahan Cewe...**")
     try:
         desahannya = [
@@ -42,7 +41,6 @@ async def desahcewe(event):
                 "@IndomieGanteng", filter=InputMessagesFilterVoice
             )
         ]
-        aku = await event.client.get_me()
         await event.client.send_file(
             event.chat_id,
             file=random.choice(desahannya), reply_to=event.reply_to_msg_id,
@@ -54,7 +52,7 @@ async def desahcewe(event):
 
 
 @register(pattern="^/desahcowo(.*)")
-async def desahcowo(event):
+async def _(event):
     memek = await event.reply(event, "**🔍 Mencari VN Desahan Cowo...**")
     try:
         desahcowo = [
@@ -63,7 +61,6 @@ async def desahcowo(event):
                 "@desahancowok3", filter=InputMessagesFilterVoice
             )
 	]
-        aku = await event.client.get_me()
         await event.client.send_file(
             event.chat_id,
             file=random.choice(desahcowo), reply_to=event.reply_to_msg_id,
@@ -75,7 +72,7 @@ async def desahcowo(event):
 
 
 @register(pattern="^/ayang(.*)")
-async def ayang(event):
+async def _(event):
     memek = await event.reply(event, "**🔍 Mencari Ayang...**")
     try:
         ayangnya = [
@@ -84,7 +81,6 @@ async def ayang(event):
                 "@IndomieGantengV2", filter=InputMessagesFilterPhotos
             )
         ]
-        aku = await event.client.get_me()
         await event.client.send_file(
             event.chat_id,
             file=random.choice(ayangnya), reply_to=event.reply_to_msg_id,

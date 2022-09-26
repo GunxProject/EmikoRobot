@@ -13,7 +13,7 @@ from telethon.tl.types import InputMessagesFilterPhotos
 
 @register(pattern="^/asupan(.*)")
 async def _(event):
-    memek = await event.reply(event, "**🔍 Mencari Video Asupan...**")
+    memek = await event.reply("**🔍 Mencari Video Asupan...**")
     try:
         asupannya = [
             asupan
@@ -21,7 +21,8 @@ async def _(event):
                 "@IndomieGantengV3", filter=InputMessagesFilterVideo
             )
         ]
-        await event.client.send_file(
+        
+        await tbot.send_file(
             event.chat_id,
             file=random.choice(asupannya), reply_to=event.reply_to_msg_id,
             caption=f"**Asupan by** [{aku.first_name}](tg://user?id={aku.id})")
@@ -33,7 +34,7 @@ async def _(event):
 
 @register(pattern="^/desahcewe(.*)")
 async def _(event):
-    memek = await event.reply(event, "**🔍 Mencari VN Desahan Cewe...**")
+    memek = await event.reply("**🔍 Mencari VN Desahan Cewe...**")
     try:
         desahannya = [
             desah
@@ -41,7 +42,8 @@ async def _(event):
                 "@IndomieGanteng", filter=InputMessagesFilterVoice
             )
         ]
-        await event.client.send_file(
+        
+        await tbot.send_file(
             event.chat_id,
             file=random.choice(desahannya), reply_to=event.reply_to_msg_id,
             caption=f"**Desahan by** [{aku.first_name}](tg://user?id={aku.id})")
@@ -53,7 +55,7 @@ async def _(event):
 
 @register(pattern="^/desahcowo(.*)")
 async def _(event):
-    memek = await event.reply(event, "**🔍 Mencari VN Desahan Cowo...**")
+    memek = await event.reply("**🔍 Mencari VN Desahan Cowo...**")
     try:
         desahcowo = [
             desahnya
@@ -61,7 +63,8 @@ async def _(event):
                 "@desahancowok3", filter=InputMessagesFilterVoice
             )
 	]
-        await event.client.send_file(
+        
+        await tbot.send_file(
             event.chat_id,
             file=random.choice(desahcowo), reply_to=event.reply_to_msg_id,
             caption=f"**Desahan cowo by** [{aku.first_name}](tg://user?id={aku.id})")
@@ -73,7 +76,7 @@ async def _(event):
 
 @register(pattern="^/ayang(.*)")
 async def _(event):
-    memek = await event.reply(event, "**🔍 Mencari Ayang...**")
+    memek = await event.reply("**🔍 Mencari Ayang...**")
     try:
         ayangnya = [
             ayang
@@ -81,7 +84,8 @@ async def _(event):
                 "@IndomieGantengV2", filter=InputMessagesFilterPhotos
             )
         ]
-        await event.client.send_file(
+        
+        await tbot.send_file(
             event.chat_id,
             file=random.choice(ayangnya), reply_to=event.reply_to_msg_id,
             caption=f"**Ayang by** [{aku.first_name}](tg://user?id={aku.id})")

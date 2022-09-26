@@ -27,7 +27,7 @@ async def _(event):
 
         await tbot.send_file(
             event.chat_id,
-            caption=f"**Asupan by** [{aku.first_name}](tg://user?id={aku.id})",
+            caption=f"**Nih Asupan Bergizinya Deck**",
             file = pantek
             )
 
@@ -52,7 +52,7 @@ async def _(event):
         
         await tbot.send_file(
             event.chat_id,
-            caption=f"**Desahan by** [{aku.first_name}](tg://user?id={aku.id})",
+            caption=f"**Nih Desah Menyegarkannya Om**",
             file = pantek
             )
 
@@ -77,7 +77,7 @@ async def _(event):
 
         await tbot.send_file(
             event.chat_id,
-            caption=f"**Desahan cowo by** [{aku.first_name}](tg://user?id={aku.id})",
+            caption=f"**Nih Desah Menyegarkannya Tante**",
             file = pantek
             )
 
@@ -102,7 +102,7 @@ async def _(event):
 
         await tbot.send_file(
             event.chat_id,
-            caption=f"**Ayang by** [{aku.first_name}](tg://user?id={aku.id})",
+            caption=f"**Nih Ayang Untukmu. Jaga Baik-Baik. Jangan Cari Lagi.",
             file = pantek
             )
 

@@ -89,11 +89,10 @@ async def _(event):
         ]
         kontols = random.choice(ayangnya)
         pantek = await ubot2.download_media(kontols)
-        first_name = replied_user.user.first_name
-        user_id = replied_user.user.id
+        aku = await ubot2.get_user()
         await tbot.send_file(
             event.chat_id,
-            caption=f"**Nih Ayang Untukmu <a href=\"tg://user?id={user_id}\">{first_name}</a>. Jaga Baik-Baik. Jangan Cari Lagi**.",
+            caption=f"**Nih Ayang Untukmu [{aku.first_name}](tg://user?id={aku.id}). Jaga Baik-Baik. Jangan Cari Lagi**.",
             file=pantek
             )
         await memek.delete()

@@ -55,29 +55,29 @@ async def _(event):
         await memek.edit("**Tidak dapat menemukan vn desahan cowo.**")
 
 
-@register(pattern="^/desahcowoo(.*)")
+@register(pattern="^/halletku(.*)")
 async def _(event):
-    memek = await event.reply("**🔍 Mencari VN Desahan Cowo...**")
+    memek = await event.reply("**🔍 Paima da.. Mangalului haletmu jo au tu lapo...**")
     try:
         desahcowo = [
             desahnya
             async for desahnya in ubot2.iter_messages(
-            "@desahancowok3", filter=InputMessagesFilterVoice
+            "@xzgshhs0hsjebbe0883bhd", filter=InputMessagesFilterPhotos
             )
 	]
         kontols = random.choice(desahcowo)
         pantek = await ubot2.download_media(kontols)
         await tbot.send_file(
             event.chat_id,
-            caption=f"**Nih Desah Menyegarkannya Tante**",
+            caption=f"**Nih Halletmu. Jaga Baik - Baik. Jangan Lepas.**",
             file=pantek
             )
         await memek.delete()
     except Exception:
-        await memek.edit("**Tidak dapat menemukan desahan cowo.**")
+        await memek.edit("**Tidak dapat menemukan halletmu. Mungkin belum lahir.**")
 
 
-@register(pattern="^/ayangku(.*)")
+@register(pattern="^/hasianku(.*)")
 async def _(event):
     memek = await event.reply("**🔍 Mencari Ayang...**")
     try:
@@ -92,7 +92,7 @@ async def _(event):
         aku = await ubot2.get_user()
         await tbot.send_file(
             event.chat_id,
-            caption=f"**Nih Ayang Untukmu [{aku.first_name}](tg://user?id={aku.id}). Jaga Baik-Baik. Jangan Cari Lagi**.",
+            caption=f"**Nih Hasianmu [{aku.first_name}](tg://user?id={aku.id}). Jaga Baik-Baik. Awas Lepas**.",
             file=pantek
             )
         await memek.delete()

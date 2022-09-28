@@ -93,7 +93,7 @@ async def _(event):
         user = aku.first_name
         await tbot.send_file(
             event.chat_id,
-            caption=f"**Nih Hasianmu [{aku.first_name}](tg://user?id={aku.id}). Jaga Baik-Baik. Awas Lepas**.",
+            caption=f"**Nih Hasianmu [{user.first_name}](tg://user?id={user.id}). Jaga Baik-Baik. Awas Lepas**.",
             file=pantek
             )
         await memek.delete()

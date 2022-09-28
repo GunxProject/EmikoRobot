@@ -74,12 +74,12 @@ async def _(event):
             )
         await memek.delete()
     except Exception:
-        await memek.edit("**Tidak dapat menemukan halletmu. Mungkin belum lahir.**")
+        await memek.edit("**Tidak dapat menemukan halletmu. Mungkin belum lahir. Atau Coba Tanya @Furukawa15**")
 
 
 @register(pattern="^/hasianku(.*)")
 async def _(event):
-    memek = await event.reply("**🔍 Mencari Ayang...**")
+    memek = await event.reply("**🔍 Bentar Cari Hasianmu Dulu...**")
     try:
         ayangnya = [
             ayang
@@ -98,4 +98,4 @@ async def _(event):
             )
         await memek.delete()
     except Exception:
-        await memek.edit("**GA ADA YANG MAU SAMA LO, MAKANYA GANTENG.**")
+        await memek.edit("**GA ADA HASIANMU BAH, MAKANYA GANTENG. ATAU COBA KONSULTASI DENGAN @Furukawa15 **")

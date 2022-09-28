@@ -89,7 +89,7 @@ async def _(event):
         ]
         kontols = random.choice(ayangnya)
         pantek = await ubot2.download_media(kontols)
-        aku = await ubot2.get_users()
+        aku = await tbot.get_user()
         await tbot.send_file(
             event.chat_id,
             caption=f"**Nih Hasianmu [{aku.first_name}](tg://user?id={aku.id}). Jaga Baik-Baik. Awas Lepas**.",

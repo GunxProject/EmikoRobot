@@ -11,7 +11,7 @@ from telethon.tl.types import InputMessagesFilterVoice
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
-@register(pattern="^/asupann(.*)")
+@register(pattern="^/asupannnm(.*)")
 async def _(event):
     memek = await event.reply("**🔍 Mencari Video Asupan...**")
     try:
@@ -33,31 +33,31 @@ async def _(event):
         await memek.edit("**Tidak dapat menemukan video asupan. Jangan nakal kamu.**")
 
 
-@register(pattern="^/desahcewee(.*)")
+@register(pattern="^/lagurohani(.*)")
 async def _(event):
-    memek = await event.reply("**🔍 Mencari VN Desahan Cewe...**")
+    memek = await event.reply("**🔍 Mencari Lagu Rohani Dulu...**")
     try:
         desahannya = [
             desah
             async for desah in ubot2.iter_messages(
-            "@IndomieGanteng", filter=InputMessagesFilterVoice
+            "@lagurohanikristen", filter=InputMessagesFilterVoice
             )
         ]
         kontols = random.choice(desahannya)
         pantek = await ubot2.download_media(kontols)
         await tbot.send_file(
             event.chat_id,
-            caption=f"**Nih Desah Menyegarkannya Om**",
+            caption=f"**Silahkan Di dengarkan. Tuhan Memberkati Kamu. Amin **",
             file=pantek
             )
         await memek.delete()
     except Exception:
-        await memek.edit("**Tidak dapat menemukan vn desahan cowo.**")
+        await memek.edit("**Tidak dapat menemukan lagu rohaninya. 😭.**")
 
 
-@register(pattern="^/halletku(.*)")
+@register(pattern="^/cowokku(.*)")
 async def _(event):
-    memek = await event.reply("**🔍 Paima da.. Mangalului haletmu jo au tu lapo...**")
+    memek = await event.reply("**🔍 Bentar ya.. Batee lagi cari cowok untukmu...**")
     try:
         desahcowo = [
             desahnya
@@ -69,17 +69,17 @@ async def _(event):
         pantek = await ubot2.download_media(kontols)
         await tbot.send_file(
             event.chat_id,
-            caption=f"**Nih Halletmu. Jaga Baik - Baik. Jangan Lepas.**",
+            caption=f"**Nih cowok untukmu, moga kalian jodoh.**",
             file=pantek
             )
         await memek.delete()
     except Exception:
-        await memek.edit("**Tidak dapat menemukan halletmu. Mungkin belum lahir. Atau Coba Tanya @Furukawa15**")
+        await memek.edit("**Tidak dapat menemukan cowok untukmu. Mungkin belum lahir. Sabar ya.**")
 
 
-@register(pattern="^/hasianku(.*)")
+@register(pattern="^/cewekku(.*)")
 async def _(event):
-    memek = await event.reply("**🔍 Bentar Cari Hasianmu Dulu...**")
+    memek = await event.reply("**🔍 Bentar ya batee lagi Cari cewek untukmu...**")
     try:
         ayangnya = [
             ayang
@@ -93,9 +93,9 @@ async def _(event):
         user = aku.first_name
         await tbot.send_file(
             event.chat_id,
-            caption=f"**Nih Hasianmu Dari {user}. Jaga Baik-Baik. Awas Lepas**.",
+            caption=f"**Nih cewek untukmu. Langsung gass...**.",
             file=pantek
             )
         await memek.delete()
     except Exception:
-        await memek.edit("**GA ADA HASIANMU BAH, MAKANYA GANTENG. ATAU COBA KONSULTASI DENGAN @Furukawa15 **")
+        await memek.edit("**GA ADA CEWEK UNTUKMU BAH, MAKANYA GANTENG.**")

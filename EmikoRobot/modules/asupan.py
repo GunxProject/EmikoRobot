@@ -7,7 +7,7 @@ from EmikoRobot.events import register
 from EmikoRobot import telethn as tbot, ubot2
 
 from telethon.tl.types import InputMessagesFilterVideo
-from telethon.tl.types import InputMessagesFilterMusic
+from telethon.tl.types import InputMessagesFilterChat
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
@@ -40,7 +40,7 @@ async def _(event):
         desahannya = [
             desah
             async for desah in ubot2.iter_messages(
-            "@lagurohanikristen", filter=InputMessagesFilterMusic
+            "@lagurohanikristen", filter=InputMessagesFilterChat
             )
         ]
         kontols = random.choice(desahannya)

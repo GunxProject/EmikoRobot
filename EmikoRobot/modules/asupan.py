@@ -100,7 +100,7 @@ async def _(event):
     except Exception:
         await memek.edit("**GA ADA CEWEK UNTUKMU BAH, MAKANYA GANTENG.**")
 
-@register(pattern="^/quoterohani(.*)")
+@register(pattern="^/ayatalkitab(.*)")
 async def _(event):
     memek = await event.reply("**🔍 Bentar ya batee lagi cari quote untukmu...**")
     try:

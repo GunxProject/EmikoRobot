@@ -11,26 +11,26 @@ from telethon.tl.types import InputMessagesFilterMusic
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
-@register(pattern="^/asupannnm(.*)")
+@register(pattern="^/Asupan(.*)")
 async def _(event):
-    memek = await event.reply("**🔍 Mencari Video Asupan...**")
+    memek = await event.reply("**🔍 Mencari Video Asupan (Bermanfaat) Dulu...**")
     try:
         asupannya = [
             asupan
             async for asupan in ubot2.iter_messages(
-            "@IndomieGantengV3", filter=InputMessagesFilterVideo
+            "@renunganbarengg", filter=InputMessagesFilterVideo
             )
         ]
         kontols = random.choice(asupannya)
         pantek = await ubot2.download_media(kontols)
         await tbot.send_file(
             event.chat_id,
-            caption=f"**Nih Asupan Bergizinya Deck**",
+            caption=f"**Nih Asupan Bermanfaatnya... Semoga Harimu Indah...**",
             file=pantek
             )
         await memek.delete()
     except Exception:
-        await memek.edit("**Tidak dapat menemukan video asupan. Jangan nakal kamu.**")
+        await memek.edit("**Tidak dapat menemukan video...**")
 
 
 @register(pattern="^/lagurohani(.*)")

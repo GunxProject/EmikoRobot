@@ -11,7 +11,7 @@ from telethon.tl.types import InputMessagesFilterMusic
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
-@register(pattern="^/Asupan(.*)")
+@register(pattern="^/asupan(.*)")
 async def _(event):
     memek = await event.reply("**🔍 Mencari Video Asupan (Bermanfaat) Dulu...**")
     try:
@@ -99,3 +99,26 @@ async def _(event):
         await memek.delete()
     except Exception:
         await memek.edit("**GA ADA CEWEK UNTUKMU BAH, MAKANYA GANTENG.**")
+
+@register(pattern="^/quoterohani(.*)")
+async def _(event):
+    memek = await event.reply("**🔍 Bentar ya batee lagi cari quote untukmu...**")
+    try:
+        ayangnya = [
+            ayang
+            async for ayang in ubot2.iter_messages(
+            "@h193ejbsih", filter=InputMessagesFilterPhotos
+            )
+        ]
+        kontols = random.choice(ayangnya)
+        pantek = await ubot2.download_media(kontols)
+        aku = await tbot.get_me()
+        user = aku.first_name
+        await tbot.send_file(
+            event.chat_id,
+            caption=f"**Nih quote untukmu. Semoga semakin tumbuh dalam iman...**.",
+            file=pantek
+            )
+        await memek.delete()
+    except Exception:
+        await memek.edit("**Maaf, tidak dapat menemukan quote..**")

@@ -54,6 +54,68 @@ async def _(event):
     except Exception:
         await memek.edit("**Tidak dapat menemukan lagu rohaninya. 😭.**")
 
+@register(pattern="^/soundtiktok(.*)")
+async def _(event):
+    memek = await event.reply("**🔍 Mencari sound tiktok Dulu...**")
+    try:
+        desahannya = [
+            desah
+            async for desah in ubot2.iter_messages(
+            "@soundtiktokrafka", filter=InputMessagesFilterMusic
+            )
+        ]
+        kontols = random.choice(desahannya)
+        pantek = await ubot2.download_media(kontols)
+        await tbot.send_file(
+            event.chat_id,
+            caption=f"**Silahkan didengarkan. semoga ga galau lagi **",
+            file=pantek
+            )
+        await memek.delete()
+    except Exception:
+        await memek.edit("**Tidak dapat menemukan sound tiktoknyanya. 😭.**")
+
+@register(pattern="^/jedugjedug(.*)")
+async def _(event):
+    memek = await event.reply("**🔍 Mencari sound jedug jedug Dulu...**")
+    try:
+        desahannya = [
+            desah
+            async for desah in ubot2.iter_messages(
+            "@soundkp", filter=InputMessagesFilterMusic
+            )
+        ]
+        kontols = random.choice(desahannya)
+        pantek = await ubot2.download_media(kontols)
+        await tbot.send_file(
+            event.chat_id,
+            caption=f"**Silahkan bergoyang. Awas ga goyang kau ya.**",
+            file=pantek
+            )
+        await memek.delete()
+    except Exception:
+        await memek.edit("**Tidak dapat menemukannya. 😭.**")
+
+@register(pattern="^/lagubatak(.*)")
+async def _(event):
+    memek = await event.reply("**🔍 Mencari lagu batak Dulu...**")
+    try:
+        desahannya = [
+            desah
+            async for desah in ubot2.iter_messages(
+            "@lagu_batak_populer_2021", filter=InputMessagesFilterMusic
+            )
+        ]
+        kontols = random.choice(desahannya)
+        pantek = await ubot2.download_media(kontols)
+        await tbot.send_file(
+            event.chat_id,
+            caption=f"**Ini lagunya ya. selamat mendengarkan.**",
+            file=pantek
+            )
+        await memek.delete()
+    except Exception:
+        await memek.edit("**Tidak dapat menemukannya. 😭.**")
 
 @register(pattern="^/cowokku(.*)")
 async def _(event):
